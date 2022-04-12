@@ -1,0 +1,304 @@
+article.message-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid grey;
+    justify-content: space-between;
+}
+
+article.message-container:hover {
+    background-color: #ffffff4a;
+    border-radius: 10px;
+}
+
+article.message-container:hover .DotsVert {
+    display: inline;
+}
+
+.img-content {
+    display: flex;
+}
+
+.DotsVert {
+    cursor: pointer;
+    position: relative;
+    height:3vh;
+    width:3vh;
+    right: 45px;
+    margin-top: 2vh;
+    display: none;
+    transition: transform 330ms;
+}
+
+.message-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-left: 10px;
+    max-width: 80%;
+}
+
+header.message-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+h4.message-sender {
+    margin: 0;
+    font-size: 2.2vh;
+}
+
+h4.message-sender:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+span.message-time {
+    color: grey;
+    font-size: 1.5vh;
+    margin-left: 5px;
+}
+
+img.message-image {
+    height: 6vh;
+    width: 6vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+}
+
+p.message-text {
+    margin: 0;
+    font-size: 3vh;
+    text-align: left;
+    word-break: break-word;
+}
+
+p.channelName {
+    margin: 0;
+    padding-left: 3%;
+    cursor: pointer;
+}
+
+button.addChannel {
+    position: absolute;
+    right: 3%;
+    border: 0;
+    background: 0;
+    color: wheat;
+    font-size: 4vh;
+    cursor: pointer;
+}
+
+.Chan.Popup {
+    background-color: #72727252;
+    position: fixed;
+    width: 30%;
+    height: 50%;
+    top: 25%;
+    left: 35%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button.Cancelbtn {
+    border: 0;
+    background: 0;
+    font-family: 'neon';
+    font-size: 4vw;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+button.Backbtn {
+    border: 0;
+    background: 0;
+    font-family: 'neon';
+    font-size: 2vw;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+.Popup.inner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0 0 0 / 49%);
+}
+
+button.AddJoinChan {
+    border: 0;
+    background: 0;
+    width: 50%;
+    cursor: pointer;
+    color: blanchedalmond;
+    font-size: 2vw;
+}
+
+.AJCbtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 40%;
+}
+
+img.AddJoinImg {
+    width: 80%;
+}
+
+.AddChan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 70%;
+}
+
+.JoinChan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 70%;
+}
+
+input.AJCplaceholder {
+    margin-top: 20px;
+    border: 2px solid;
+    height: 40px;
+    width: 80%;
+    background: #0000008a;
+    border-radius: 20px;
+    padding: 10px;
+    color: antiquewhite;
+}
+
+
+.UserParams {
+    position: absolute;
+    right: -175px;
+}
+
+.DotsParams {
+    position: absolute;
+    right: 150px;
+    width: 100%;
+    height: 100%;
+}
+
+.UserParams:hover .scrollingMenu.container {
+    transform: scale(1);
+    transition: transform 300ms;
+}
+
+.scrollingMenu.container {
+    position: relative;
+    top: 0;
+    left: -105px;
+    background-color: #363636;
+    width: 50px;
+    width: 60px;
+    transform:scale(0);
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-radius: 10px;
+    align-content: center;
+    transition: transform 300ms;
+}
+
+.chatUserParam {
+    margin-top:2.5px;
+    margin-bottom:2.5px;
+    background: 0;
+    border: 0;
+    width: 100%;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+.chatUserParam:hover {
+    background-color: #212121fa;
+    color: antiquewhite;
+}
+
+.dropbtn {
+    font-size: 16px;
+    border: none;
+}
+
+.dropbtn {
+    font-size: 16px;
+    border: none;
+    display: none;
+}
+
+article.message-container:hover .dropbtn {
+    display: block;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+    top: 13px;
+    height: 0;
+}
+  
+.dropdown-content {
+    transform: scale(0);
+    border-radius: 10px;
+    position: absolute;
+    background-color: #363636;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropbtn:hover 
+{
+    transform:rotate(180deg);
+    transition: transform 330ms ;
+}
+  
+.dropdown:hover .dropdown-content {    transform: scale(1);
+    transition: transform 300ms;}
+
+@media screen and (orientation: portrait) {
+    button.addChannel {
+        position: absolute;
+        right: 3%;
+        border: 0;
+        background: 0;
+        color: wheat;
+        font-size: 4vw;
+        cursor: pointer;
+    }
+}

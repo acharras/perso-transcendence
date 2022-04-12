@@ -1,0 +1,432 @@
+.ProfileElement {
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    height: 86vh;
+    text-align: center;
+    padding-bottom: 7vh;
+    align-items: center;
+}
+
+.ProfileMain {
+    width: 70vw;
+    display: flex;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    justify-content: space-around;
+    flex-direction: column;
+    box-shadow: rgb(0 0 0) 0px 30px 60px -12px inset, rgb(0 0 0) 0px 18px 36px -18px inset;
+    align-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.ImgName {
+    display: flex;
+    width: 30%;
+    height: 85%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(147 63 63 / 39%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+span.HistoryNames {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+img.ProfileImage {
+    display: flex;
+    height: 20vh;
+    width: 20vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.profile-imgpencil {
+    transition: transform 200ms;
+}
+
+.profile-imgpencil:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 200ms;
+}
+
+.profile-imgpencil:hover img.ProfileImage {
+    filter: brightness(0.5);
+}
+
+.profile-imgpencil:hover svg.profile-pencil {
+    display: block;
+}
+
+svg.profile-pencil {
+    position: absolute;
+    top: calc(100% / 2 - 12px);
+    right: 0;
+    left: calc(50% - 12px);
+    bottom: 0;
+    transform: scale(2);
+    display: none;
+}
+
+#History {
+    width: 30vw;
+    height: 10vh;
+    padding: 10px;
+    display: flex;
+    border-radius: 20px;
+    background-color: rgb(147 63 63 / 39%);
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5vh
+}
+
+img.HistoryImage {
+    height: 8vh;
+    width: 8vh;
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+}
+
+p.Score {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+#Achievements {
+    width: 40%;
+    height: 65%;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    background-color: rgb(147 63 63 / 39%);
+    flex-direction: column;
+    align-items: center;
+}
+
+div.ProfileName {
+    display: flex;
+    font-size: 1.5vh;
+}
+
+p#my-pong-points {
+    display: flex;
+    font-size: 1.5vh;
+}
+
+p#goal-average {
+    display: flex;
+    font-size: 1.5vh;
+}
+
+img.rank-img {
+    height: 15vh;
+    width: 15vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.Stats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000063;
+    font-size: 1.5vh;
+    border-radius: 10px;
+}
+
+p.normal-Stats {
+    border-right: 1px solid white;
+    padding: 10px;
+    flex: 1 1 auto;
+    font-size: 1.5vh;
+}
+
+p.ranked-Stats {
+    padding: 10px;
+    flex: 1 1 auto;
+    font-size: 1.5vh;
+}
+
+img.Add.friend {
+    height: 5vw;
+    width: 5vw;
+    cursor: pointer;
+}
+
+.userNotLogged {
+    width: 2vh;
+    height: 2vh;
+    background-color: #535353;
+    border-radius: 50%;
+    margin-left: 5px;
+    position: relative;
+}
+
+.userLogged {
+    width: 2vh;
+    height: 2vh;
+    background-color: #48ff51;
+    border-radius: 50%;
+    margin-left: 5px;
+    position: relative;
+}
+
+.userInGame {
+    width: 2vh;
+    height: 2vh;
+    background-color: #0298E8;
+    border-radius: 50%;
+    margin-left: 5px;
+    position: relative;
+}
+
+.Achievements_contents {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:1.5vh;
+}
+
+.Progress_Bar {
+    display: flex;
+    height: 15%;
+    width: 80%;
+    border: solid 1px black;
+    flex-direction: row;
+    border-radius:15px;
+}
+.Progress_Bar_Filler {
+    padding-right: 4px;
+    height: 100%;
+    background: white;
+    border-radius: inherit;
+    text-align: end;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#Achievement_font
+{
+    font-family: sans-serif;
+    font-size:1.8vh;
+}
+
+.logo {
+    height:1vh;
+    width:1vh;
+}
+
+.Blocked {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40%;
+    justify-content: space-evenly;
+    margin: 10% 0;
+    font-size: 2em;
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid red;
+}
+
+.Blocked > img.ProfileImage {
+    height: 15vh;
+    width: 15vh;
+}
+
+.user.management {
+    cursor: pointer;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (orientation: portrait) {
+
+    .ProfileMain {
+        width: 70%;
+        display: flex;
+        height: 80vh;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 15px;
+        box-shadow: rgb(0 0 0) 0px 30px 60px -12px inset, rgb(0 0 0) 0px 18px 36px -18px inset;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .HistoryMain {
+        width: 85%;
+        display: flex;
+        height: 20%;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: rgb(147 63 63 / 39%);
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img.rank-img {
+        height: 10vw;
+        width: 10vw;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #History {
+        width: 85%;
+        display: flex;
+        height: fit-content;
+        padding: 10px;
+        background-color: rgb(0 0 0 / 0%);
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    span.HistoryNames {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .ImgName {
+        width: 85%;
+        display: flex;
+        height: 20%;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: rgb(147 63 63 / 39%);
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    img.ProfileImage {
+        height: 15vw;
+        width: 15vw;
+        background-size: cover;
+        background-position: center;
+        border-radius: 100%;
+    }
+
+    #Achievements {
+        width: 85%;
+        height: 40%;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: rgb(147 63 63 / 39%);
+    }
+
+    .Achievements_contents {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1vh;
+    }
+    
+    .Progress_Bar {
+        display: flex;
+        height: 15%;
+        width: 80%;
+        border: solid 1px black;
+        flex-direction: row;
+        border-radius:15px;
+    }
+    .Progress_Bar_Filler {
+        padding-right: 4px;
+        height: 100%;
+        background: white;
+        border-radius: inherit;
+        text-align: end;
+        color: black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        font-size:1.5vw;
+    }
+    
+    #Achievement_font
+    {
+        font-family: sans-serif;
+        font-size:1.5vh;
+        margin-bottom:-5px;
+    }
+    .logo {
+        height:10px;
+        width:10px;
+    }
+
+    div.ProfileName {
+        display: flex;
+        font-size: 1.5vw;
+    }
+    
+    p#my-pong-points {
+        display: flex;
+        font-size: 1.5vw;
+    }
+    
+    p#goal-average {
+        display: flex;
+        font-size: 1.5vw;
+    }
+
+    .userNotLogged {
+        width: 2vw;
+        height: 2vw;
+        background-color: #535353;
+        border-radius: 50%;
+        margin-left: 5px;
+        position: relative;
+    }
+    
+    .userLogged {
+        width: 2vw;
+        height: 2vw;
+        background-color: #48ff51;
+        border-radius: 50%;
+        margin-left: 5px;
+        position: relative;
+    }
+    
+    p.normal-Stats {
+        border-right: 1px solid white;
+        padding: 10px;
+        flex: 1 1 auto;
+        font-size: 1.5vw;
+    }
+    
+    p.ranked-Stats {
+        padding: 10px;
+        flex: 1 1 auto;
+        font-size: 1.5vw;
+    }
+}

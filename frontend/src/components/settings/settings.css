@@ -1,0 +1,196 @@
+.SettingsElement {
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.SettingsMain {
+    display: flex;
+    width: 70vw;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    box-shadow: rgb(0 0 0) 0px 30px 60px -12px inset, rgb(0 0 0) 0px 18px 36px -18px inset;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.change.Nickname {
+    display:flex;
+    width: 60vw;
+    height: 8vh;
+    padding: 10px;
+    font-family: sans-serif;
+    background-color: #5094ff63;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+    font-size: (2vh, 18px);
+}
+
+.change.Nick.input {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-evenly;
+}
+
+input.changeNickPlaceholder {
+    border: 0;
+    background-color: rgb(0 0 0 / 67%);
+    padding: 5px;
+    color: antiquewhite;
+    border-radius: 10px;
+}
+
+.changeNickbtn {
+    border: 0;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.\32 FA {
+    font-size: 4vw;
+    font-family: sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+input[type=checkbox].ToggleSwitchOFF {
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label.ToggleSLabelOFF {
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+label.ToggleSLabelOFF:after {
+    content: '';
+    position: absolute;
+    top: 2.5px;
+    left: 5px;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input.ToggleSwitchOFF:checked + label {
+	background: #bada55;
+}
+
+input.ToggleSwitchOFF:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label.ToggleSLabelOFF:active:after {
+	width: calc(100% - 10px);
+}
+
+input[type=checkbox].ToggleSwitchON {
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label.ToggleSLabelON {
+	cursor: pointer;
+    width: 100px;
+    height: 50px;
+    background: #bada55;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+label.ToggleSLabelON:after {
+	content: '';
+	position: absolute;
+	top: 2.5px;
+	right: 5px;
+	width: 45px;
+	height: 45px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input.ToggleSwitchON:checked + label {
+	background: grey;
+}
+
+input.ToggleSwitchON:checked + label:after {
+	right: calc(100% - 5px);
+	transform: translateX(100%);
+}
+
+label.ToggleSLabelON:active:after {
+	width: calc(100% - 10px);
+}
+
+.file-uploaded {
+    display: none;
+}
+
+.avatarLabel{
+    border: 0;
+    background-color: rgb(0 0 0 / 67%);
+    padding: 5px;
+    padding-right: 70px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: grey;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.avatarInput {
+    display: none;
+}
+
+.avatar-bank {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.avatar-photo {
+    width: 3vh;
+    background: #fff;
+    border-radius: 50%;
+    border: 5px solid cyan;
+    box-shadow: 0 0 20px cyan;
+    margin: 1rem 0;
+    height: 3vh;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+img.avatar-photo:hover {
+    transform: scale(1.5);
+    transition-duration: 0.4s;
+}

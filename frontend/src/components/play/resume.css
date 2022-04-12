@@ -1,0 +1,64 @@
+.ResumeElement {
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+}
+
+#ResumeMain {
+    display: flex;
+    width: 70vw;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    box-shadow: rgb(0 0 0) 0px 30px 60px -12px inset, rgb(0 0 0) 0px 18px 36px -18px inset;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#resume-all-score {
+    display: flex;
+    width: 50vw;
+    height: 30vh;
+    border-radius: 20px;
+    background-color: rgb(147 63 63 / 39%);
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img.resume-image {
+    height: 20vh;
+    width: 20vh;
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+}
+
+button.resume-go-home {
+    background: transparent;
+    border: 0;
+    font-family: sans-serif;
+    font-size: min(5vw, 32px);
+    cursor: pointer;
+    color: antiquewhite;
+}
+
+#score-difference {
+    font-size: min(5vw, 32px);
+    color: black;
+}
+
+#actual-points {
+    font-family: sans-serif;
+    font-size: min(5vw, 32px);
+}
+
+#new-points {
+    font-size: min(3vw, 24px);
+    font-family: sans-serif;
+}
