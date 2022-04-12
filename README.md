@@ -14,3 +14,6 @@ REDIRECT_URI=http://localhost/oauth/redirect
 ENDPOINT=https://api.intra.42.fr/v2
 AUTHORIZATION_URI=https://api.intra.42.fr/oauth/token
 SECRET_KEY=topsecret51}
+
+
+Before run app.sh don't forget to "yarn install"
